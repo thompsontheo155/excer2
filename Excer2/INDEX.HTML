@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<Html>
+    <head>
+             <meta charset="UTF-8">
+        <Meta name="Viewport" content="width=device-width, initial-scale=1">
+        <TItle>The Youth Alliance For Change</TItle>
+    <style>
+        body {
+            font-family: arial;
+            margin: 0;
+        }
+        .hero {
+            height: 60vh;
+            width: 100%;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)),
+            url("tyac.png.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+nav {
+    background-color: #003366;
+    padding: 10px;
+}
+
+        nav a {
+            color: white;
+            margin-right: 20px;
+            text-decoration: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+    </HEad>
+    <body>
+        <div class="hero"></div>
+          <div style="padding: 20px;">
+                <h1>The Youth Alliance For Change</h1>
+                <P>Welcome to The Youth Alliance For Change (TYAC), where we are a united movement of young leaders committed to driving positive
+                    transformation in our communities. Together, we amplify youth voices, inspire action and create lasting impact for a better future.</P>
+                
+            <!-- Navigation -->
+             <nav>
+                <a href="INDEX.HTML">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="member.html">Membership</a>
+                <a href="contact.html">Contact</a>
+             </nav>
+
+             <h2 style="color: lime;">Time</h2>
+             <div id="clock" style="font-size: 30px; font-weight: bold;"></div>
+             <script>
+                function updateClock() {
+                    const now = new Date () ;
+                    let hours = String(now.getHours()). padStart (2, '0');
+                    let minutes = String(now.getMinutes ()).padStart(2,'0');
+                    let seconds = String(now.getSeconds ()). padStart(2, '0');
+
+                    document .getElementById('clock'). innerText = hours+":" + minutes + ":" + seconds;
+                }
+
+                setInterval (updateClock, 1000);
+                updateClock();
+
+             </script>
+             <input type="date" id="date" name="">
+             <script>
+                document.getElementById('date').value = new Date
+                ().toISOString().split('T') [0]
+             </script>
+
+             <!-- Main Content -->
+         
+              <h2>Organization Members</h2>
+              <table>
+                <tr>
+                    <th> Photo</th>
+                    <th> Name</th>
+                     <th> Date of Birth</th>
+                   <th>Position</th> 
+                   <th>Country of Origin</th>
+                   <th>Contact</th>
+                </tr>
+                <tr>
+                    <td><img src="ttt.png.jpg" width="100"></td>
+                    <td>Theo T. Thompson</td>
+                    <td>October 15, 2004</td>
+                     <td>Chief Executive Officier (CEO)</td>
+                      <td>Liberia</td>
+                       <td>+231888665684</td>
+                </tr>
+                <tr>
+                  <td><img src="rjc.jpg" width="100"></td>
+                 <td>Robphanie Joan Coleman</td>
+                  <td>August 5, 2008</td>
+                   <td>Chief Operating Officier</td>
+                    <td>Liberia</td>
+                     <td>+17633288653</td>
+                </tr>
+                
+                <tr>
+                  <td><img src="ccs.jpg" width="100"></td>
+                 <td>Charisma C.G. Smith</td>
+                  <td>July 21, 2009</td>
+                   <td>Chief Financial Officier</td>
+                    <td>Liberia</td>
+                     <td>+231881411752</td>
+                </tr>
+
+
+              <tr>  
+    <td><img src="gnd.jpg"width="100"></td>
+    <td>Gabriel N. Dwalu</td>
+    <td>June 1, 2005</td>
+    <td>Chief Advisor(CA)</td>
+    <td>Liberia</td>
+    <td>+231886449827</td>
+    </tr>
+    <tr>
+         <td><img src="chs.jpg"width="100"></td>
+    <td>Charis C. Smith</td>
+    <td>July 21, 2009</td>
+    <td>Board Member (BM)</td>
+    <td>Liberia</td>
+    <td>+231881411751</td>
+    </tr>
+    <tr>
+         <td><img src="lnn.jpg"width="100"></td>
+    <td>Lawson M.Nagbe</td>
+    <td>October 4, 2006</td>
+    <td>Board Member(BM)</td>
+    <td>Liberia</td>
+    <td>+2348054319050</td>
+    </tr>
+</table>
+    <!-- Footer -->
+    <div style="background-color: #003366;padding: 10px; color: white; text-align: center;">
+        © 2025 The Youth Alliance For Change . All Rights Reserved.
+    </div>
+    </body>
+</Html> 
